@@ -13,6 +13,12 @@ body {
   margin: 0 auto;
 }
 
+code {
+  background-color: lightgray;
+  border-radius: 0.3em;
+  border: 1px solid gray;
+}
+
 /* HEADER */
 
 header {
@@ -20,10 +26,10 @@ header {
   text-align: center;
   width: 90%;
   border: none;
-  margin: 25px;
+  margin: 25px auto;
   color: white;
   padding: 30px 0;
-  box-shadow: 0px 5px 10px black;
+  box-shadow: 0px 5px 8px black;
 }
 
 header > img {
@@ -52,14 +58,130 @@ header div {
   margin: -10px;
 }
 
+#titolo {
+  margin-bottom: 30px;
+}
+
 /* MAIN */
 
-/* ELEMENTI NEL MAIN - ARTICLE */
+main {
+  background-color: white;
+  width: 90%;
+  border: none;
+  margin: 25px auto;
+  box-shadow: 0px 5px 8px black;
+  padding-left: 20px;
+  padding-right: 25px;
+  box-sizing: border-box;
+}
 
+/* ELEMENTI NEL MAIN - ARTICLE */
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.5em;
+  line-height: 1.5em;
+  letter-spacing: -1px;
+  padding-top: 40px;
+}
+
+#crediti {
+  color: rgb(162, 162, 162);
+  font-size: 1.3em;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+main p b {
+  font-weight: 500;
+  color: darkred;
+}
+
+.paragrafo {
+  letter-spacing: 0.5px;
+  font-size: 1.3em;
+  line-height: 1.4em;
+  font-weight: 300;
+  padding-top: 25px;
+}
 /* TABELLE */
+
+caption {
+  font-style: italic;
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  border-bottom: 3px solid #5b82d0;
+}
+
+th {
+  background-color: #5b82d0;
+  font-size: 1.3em;
+  padding: 25px 25px;
+  border-left: 1px solid white;
+}
+
+td {
+  font-size: 1.3em;
+  padding: 25px 25px;
+  text-align: center;
+}
+
+.riga-grigia {
+  background-color: rgb(236, 234, 234);
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+}
+
+iframe {
+  width: 100%;
+  height: 230px;
+  border-radius: 2em;
+}
 
 /* FORM */
 
+#novità {
+  background-color: lightgray;
+  padding: 20px 10px 10px 10px;
+  margin-top: 50px;
+}
+
+form {
+  width: 100%;
+  text-align: center;
+}
+
+input {
+  border: none;
+  border-bottom: 1px dashed;
+  width: 75%;
+  height: 40px;
+}
+
+button {
+  background-color: #5b82d0;
+  border: none;
+  color: white;
+  height: 40px;
+}
+
+#titolo-correlati {
+  margin-top: 50px;
+}
+
+.correlati {
+  background-color: lightgray;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.correlati a {
+  font-size: 1.3em;
+}
 /* ELEMENTI NELL' ASIDE */
 
 /* FOOTER */

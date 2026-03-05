@@ -22,7 +22,7 @@
     <div id="background">
       <header>
         <img src="./assets/img/logo.svg" alt="Logo Epicode" />
-        <h4>EPICODE - IL BLOG DEI DEVELOPERS</h4>
+        <h4 id="titolo">EPICODE - IL BLOG DEI DEVELOPERS</h4>
 
         <!-- INIZIO MENÙ -->
         <div>
@@ -46,8 +46,12 @@
 
       <main>
         <!-- TITOLO POST -->
-        <h2>Come creare un template per i post</h2>
-        <p>di Mario Rossi - pubblicato il 25-10-2020</p>
+        <h1>Come creare un template per i post</h1>
+
+        <p id="crediti">
+          <i class="fas fa-pen-square"></i> di Mario Rossi -
+          <i class="fas fa-clock"></i> pubblicato il 25-10-2020
+        </p>
         <!-- CONTENUTO DEL POST -->
         <p>
           La prima cosa da fare è suddividere in blocchi logici la pagina,
@@ -55,22 +59,24 @@
         </p>
         <p>Le varie aree saranno quindi suddivise in:</p>
         <!-- LISTA -->
-        <ul>
-          <li>Contenuti di intestazione del tag &lt;header&gt;</li>
+        <ul class="paragrafo">
+          <li>Contenuti di intestazione del tag <code>&lt;header&gt;</code></li>
           <li>
-            Contenuti centrali variabili del tag &lt;main&gt; (corpo principale)
+            Contenuti centrali variabili del tag
+            <code>&lt;main&gt;</code> (corpo principale)
           </li>
           <li>
-            Contenuti di fine pagina comuni, da inserire nel tag &lt;footer&gt;
+            Contenuti di fine pagina comuni, da inserire nel tag
+            <code>&lt;footer&gt;</code>
           </li>
         </ul>
-        <h2>Formattazione del codice</h2>
         <p>
-          Il testo dell'articolo dovrà essere formattato per identificare tutte
-          le parti da <b>selezionare con i CSS</b>. Perciò i passi saranno:
+          Formattazione del codice <br />Il testo dell'articolo dovrà essere
+          formattato per identificare tutte le parti da
+          <b>selezionare con i CSS</b>. Perciò i passi saranno:
         </p>
         <!-- LISTA 2 -->
-        <ol>
+        <ol class="paragrafo">
           <li>
             Progettare su carta il markup finale, assegnando ad ogni specifico
             testo il tag appropriato
@@ -103,7 +109,7 @@
             <td>17%</td>
           </tr>
           <!-- SECONDA RIGA TABELLA -->
-          <tr>
+          <tr class="riga-grigia">
             <td>2002</td>
             <td>35%</td>
             <td>22%</td>
@@ -115,7 +121,7 @@
             <td>42%</td>
           </tr>
           <!-- QUARTA RIGA TABELLLA -->
-          <tr>
+          <tr class="riga-grigia">
             <td>2008</td>
             <td>80%</td>
             <td>51%</td>
@@ -136,31 +142,39 @@
         <!-- ANTEPRIMA YOUTUBE -->
         <iframe src="https://www.youtube.com/embed/dvOvHXruEDM"></iframe>
         <!-- NOVITÀ -->
-        <h2>Novità</h2>
-        <p>
-          Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla
-          nostra newsletter:
-        </p>
-        <!-- FORM NEWSLETTER -->
-        <form>
-          <input type="email" placeholder="inserisci l'email" />
-          <button type="submit">Iscriviti!</button>
-        </form>
+        <section id="novità">
+          <h2>NOVITÀ</h2>
+          <p>
+            Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla
+            nostra newsletter:
+          </p>
+          <!-- FORM NEWSLETTER -->
+          <form>
+            <input type="email" placeholder="inserisci l'email" />
+            <button type="submit">Iscriviti!</button>
+          </form>
+        </section>
+
         <!-- AREA CORRELATI -->
-        <h2>Articoli correlati</h2>
+        <h2 id="titolo-correlati">ARTICOLI CORRELATI</h2>
         <!-- CORRELATO 1 -->
-        <a href="#">Validare il codice HTML</a>
-        <p>Categoria: develop</p>
-        <p>Data: 18-9-2020</p>
+        <section class="correlati">
+          <a href="#">Validare il codice HTML</a>
+          <p>Categoria: develop</p>
+          <p>Data: 18-9-2020</p>
+        </section>
         <!-- CORRELATO 2 -->
-        <a href="#">Correggere la sintassi</a>
-        <p>Categoria: develop</p>
-        <p>Data: 16-9-2020</p>
+        <section class="correlati">
+          <a href="#">Correggere la sintassi</a>
+          <p>Categoria: develop</p>
+          <p>Data: 16-9-2020</p>
+        </section>
         <!-- CORRELATO 3 -->
-        <a href="#">Meno Kb nella pagina</a>
-        <p>Categoria: ottimizzazione</p>
-        <p>Data: 30-9-2020</p>
-        <hr />
+        <section class="correlati">
+          <a href="#">Meno Kb nella pagina</a>
+          <p>Categoria: ottimizzazione</p>
+          <p>Data: 30-9-2020</p>
+        </section>
       </main>
       <!-- FOOTER -->
       <footer>

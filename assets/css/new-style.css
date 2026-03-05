@@ -14,6 +14,8 @@ h1 {
 
 h2 {
   font-size: 1.75em;
+  font-weight: 500;
+  text-align: center;
 }
 
 h3 {
@@ -29,7 +31,11 @@ h5 {
 }
 
 p {
-  margin: 0.25em 0;
+  letter-spacing: 0.5px;
+  font-size: 1.3em;
+  line-height: 1.4em;
+  font-weight: 300;
+  padding-top: 25px;
 }
 
 ul,
@@ -44,4 +50,10 @@ ul {
 
 ol {
   list-style-type: decimal;
+}
+
+a {
+  text-decoration: underline;
+  color: cornflowerblue;
+  font-weight: 500;
 }
